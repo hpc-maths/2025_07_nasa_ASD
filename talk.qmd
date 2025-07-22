@@ -12,7 +12,7 @@ resources:
 highlight-style: github
 footer: AMS Seminar - Advanced Supercomputing Division &nbsp;&nbsp; <img width="5%" src="figures/by-sa.png"/> &nbsp;&nbsp;  July 31st 2025
 
-
+ 
 ---
 
 ```{=html}
