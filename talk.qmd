@@ -888,8 +888,6 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 {{< include python_sections/anim_sin_bis.qmd >}}
 
-
-
 # Adaptive mesh refinement software
 
 ## Mesh adaptation
@@ -931,7 +929,31 @@ As you advance in time, you can choose different time steps depending on the res
 Finally, given that the mesh is dynamic, the load balancing must be reviewed regularly during the calculation so that, in a parallel context, all the processes have more or less the same workload. There are two types of method: one based on the space filling curve, where you cut out chunks of the same size following this curve; the other is based on solving a diffusion equation on the workload of the processes.
 :::
 
+## Open source software
 
+:::::{.center-page}
+
+::: {.fs-5}
+| Name    | Data structure | Adaptation criteria | Time scheme                     | Load balancing               |
+|---------|----------------|---------------------|---------------------------------|------------------------------|
+| AMReX   | block          | heuristic           | global/local                    | SFC                          |
+| Dendro  | tree           | wavelet             | global                          | SFC                          |
+| Dyablo  | tree           | heuristic           | global                          | SFC                          |
+| Peano   | tree           | -                   | -                               | SFC                          |
+| P4est   | tree           | -                   | -                               | SFC                          |
+| samurai | interval       | heuristic/wavelet   | RK/splitting/IMEX<br>time-space/code coupling               | SFC/diffusion algorithm      |
+:::
+
+::: {.text-center .color .mt-5 .fragment}
+*samurai: create a unified framework for testing a whole range<br class='m-0'>of mesh adaptation methods with the latest generation of numerical schemes.*
+:::
+:::::
+
+:::{.notes}
+Here's an overview of the software we think is interesting to look at today.
+
+Peano and p4est don't have any adaptation or time-scheme criteria, as they are software programs specializing solely in mesh management.
+:::
 ---
 
 <div style="position: absolute; top: 50%; transform: translate(0, -50%); text-align: center;">
@@ -945,6 +967,45 @@ Finally, given that the mesh is dynamic, the load balancing must be reviewed reg
 ::::
 :::
 </div>
+
+## Design principles
+
+:::{.center-page-vertically .lh-lg}
+- Compress the mesh according to the level-wise spatial connectivity along each Cartesian axis.
+- Achieve fast look-up for a cell into the structure, especially for parents and neighbors.
+- Maximize the memory contiguity of the stored data to allow for caching and vectorization.
+- Facilitate inter-level operations which are common in many numerical techniques.
+:::
+
+---
+
+
+## Compression rates
+
+![](figures/p4est_3.png)
+
+## Compression rates
+
+::: {.center-page .fs-5}
+| Level | Num. of cells | p4est       | samurai (leaves) | samurai (all) | ratio  |
+|-------|---------------|-------------|------------------|---------------|--------|
+| $9$   | 66379         | 2.57 Mb     | 33.68 Kb         | 121 Kb        | 21.24  |
+| $10$  | 263767        | 10.25 Mb    | 66.64 Kb         | 236.8 Kb      | 43.28  |
+| $11$  | 1051747       | 40.96 Mb    | 132.36 Kb        | 467.24 Kb     | 87.66  |
+| $12$  | 4200559       | 163.75 Mb   | 263.6 Kb         | 927 Kb        | 176.64 |
+| $13$  | 16789627      | 654.86 Mb   | 525.9 Kb         | 1.85 Mb       | 353.98 |
+| $14$  | 67133575      | 2.61 Gb     | 1.05 Mb          | 3.68 Mb       | 709.24 |
+:::
+
+:::{.notes}
+We can see here that the mesh is very compressed compared to a version using a tree structure.
+
+The total size of the mesh is multiplied by just under 4, as we build different meshes to handle ghost cells and prediction cells.
+
+What's important to note is that in a parallel context, it doesn't cost much for each process to have the meshes of its neighboring domains.
+:::
+
+
 
 ---
 
