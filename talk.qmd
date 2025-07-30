@@ -27,14 +27,50 @@ footer: Advanced Modeling & Simulation (AMS) Seminar Series &nbsp;&nbsp; <img wi
 
 The present work is the result of a team work involving
 
-- Thomas Bellotti (CR CNRS  - EM2C - Fédé Maths CS)
+- Thomas Bellotti (CNRS, EM2C - Fédé Maths CS)
 - Loïc Gouarin (IR École polytechnique, CMAP)
 - Josselin Massot (IR École polytechnique, CMAP)
 - Pierre Matalon (IR École polytechnique, CMAP)
 - Laurent Séries (IR École polytechnique, CMAP)
-- Christian Tenaud (DR CNRS  - EM2C - Fédé Maths CS)
+- Christian Tenaud (CNRS, EM2C - Fédé Maths CS)
 
 ::::
+
+
+
+:::: {.col .text-center .align-self-center}
+
+:::{.text-center .mb-4}
+[website of the team](https://initiative-hpc-maths.gitlab.labos.polytechnique.fr/site/)
+
+[https://github.com/hpc-maths/](https://github.com/hpc-maths/)
+:::
+![](figures/logo_HPCMaths.jpg){width=40%}
+::::
+:::
+
+::::
+
+---
+
+
+::::{.center-page-vertically}
+::: {.row .my-4}
+
+:::: {.col-8}
+
+The present work is the result of a team work involving
+
+- Thomas Bellotti (CNRS, EM2C - Fédé Maths CS)
+- Loïc Gouarin (IR École polytechnique, CMAP)
+- Josselin Massot (IR École polytechnique, CMAP)
+- Pierre Matalon (IR École polytechnique, CMAP)
+- Laurent Séries (IR École polytechnique, CMAP)
+- Christian Tenaud (CNRS, EM2C - Fédé Maths CS)
+
+::::
+
+
 
 :::: {.col .text-center .align-self-center}
 
@@ -63,8 +99,6 @@ The present work is the result of a team work involving
 :::
 
 ::::
-
-
 
 # Context
 
