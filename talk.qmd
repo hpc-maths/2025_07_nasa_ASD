@@ -563,17 +563,7 @@ We use a Godunov flux for the small hat problem
 
 
 
----
 
-:::{.text-center}
-<div>
-<video data-autoplay width="80%" src="videos/burgers/MRA_upwind_without_portion-min_1-max_12-eps_0.01-reg_0.mp4" />
-</div>
-:::
-
-:::{.text-center .mt-0}
-$\epsilon = 1e-2$, $\underline{\ell} = 2$, $\bar{\ell} = 12$
-:::
 
 
 ---
@@ -587,7 +577,6 @@ $\epsilon = 1e-2$, $\underline{\ell} = 2$, $\bar{\ell} = 12$
 # Numerical Analysis and Modified Equations
 
 ## Linear scalar transport equation
-
 In this work, we are concerned with the numerical solution of the Cauchy problem associated with the linear scalar conservation law
 
 $$
@@ -923,31 +912,6 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR solution and level for scheme order 3)
-
-{{< include python_sections/sol_level_MR_order03_eps1e-5.qmd >}}
-
----
-
-## Burgers results (MR solution and error for scheme order 3)
-
-{{< include python_sections/sol_error_MR_order03_eps1e-5.qmd >}}
-
----
-
-## Burgers results (MR+MLF sol. and level for scheme order 3)
-
-{{< include python_sections/sol_level_MR_MLF_order03_eps1e-5.qmd >}}
-
----
-
-## Burgers results (MR+MLF sol. and error for scheme order 3)
-
-{{< include python_sections/sol_error_MR_MLF_order03_eps1e-5.qmd >}}
-
-
----
-
 ## Burgers results (MR+MLF sol. order 1) small hat {.fs-6}
 
 <!-- :::{.text-center}
@@ -1158,26 +1122,28 @@ As part of numpex, we also have an engineer position to work on the I/O part of 
 
 :::::
 
-
 ## Scientific Collaborations
 
 - Lattice Boltzmann methods and multiresolution - **Thomas Bellotti** (*EM2C/CNRS/CS*) and **Benjamin Graille** (*LMO/Université Paris-Saclay*)
-- Plasma discharges and electric propulsion - **Alejandro Alvarez-Laguna** (*LPP/École polytechnique*) and **Louis Reboul** (*ONERA*)
+- Plasma discharges and electric propulsion  - **Alejandro Alvarez-Laguna** (*LPP/École polytechnique*) and **Louis Reboul** (*ONERA*) **Teddy Pichard** and **Zoubaïr Tazakkati** (*CMAP/École polytechnique*)
 - DNS of lithium-ion batteries based on high-resolution 3D images of porous electrode microstructures - **Ali Asad** (*TotalEnergies*) and **Laurent François** (*ONERA*)
 - Sharp interface method for low Mach two-phase flows - **Nicolas Grenier** (*LISN/Université Paris-Saclay*) and **Christian Tenaud** (*EM2C/CNRS/CS*)
 - Low-Mach reactive flows - **Christian Tenaud** (*EM2C/CNRS/CS*)
-- Interfacial flow simulation - **Giuseppe Orlando** and **Ward Haegeman** (*CMAP/Ecole polytechnique*), **Samuel Kokh** (*CEA/MdlS*), **Joël Dupays** and **Clément Le Touze** (*ONERA*), **Marica Pelanti** (*ENSTA/IP Paris*), **Khaled Saleh** (*Aix-Marseille Université*), **Jean-Marc Hérard** (*EDF*)
-- Mathematical modeling and simulation of non-equilibrium plasmas for the prediction of electric propulsion - **Teddy Pichard** and **Zoubaïr Tazakkati** (*CMAP/École polytechnique*)
-- Simulation analysis on the Hydrogen risk - **Luc Lecointre**, **Pierre-Alexandre Masset**, **Etienne Studer** (*CEA*), **Sergey Koudriakov** (*CEA*) and **Christian Tenaud** (*EM2C/CNRS/CS*)
+- Interfacial flow simulation relying on diffuse interface / two-scale modeling - **Giuseppe Orlando**,  **Ward Haegeman** (*CMAP/Ecole polytechnique*), **Samuel Kokh** (*CEA/MdlS*), **Joël Dupays**, **Clément Le Touze** (*ONERA*), **Marica Pelanti** (*ENSTA/IP Paris*), **Khaled Saleh** (*Aix-Marseille Université*), **Jean-Marc Hérard** (*EDF*)
+- High-fidelity simulation of the Hydrogen risk - **Luc Lecointre**, **Pierre-Alexandre Masset**, **Etienne Studer** (*CEA*), **Sergey Koudriakov** (*CEA*) and **Christian Tenaud** (*EM2C/CNRS/CS*)
 
 
-## Five projects NASA - Modelling Summer Visit 2025
+## Five projects - NASA Modelling Summer Visit 2025
 
-- Mathematical modeling and simulation of non-equilibrium plasmas for the prediction of electric propulsion and discharges 
-- Code coupling : multistep coupling algorithm (Tuesday's seminar) - 
-- Two-phase flows two-scale modeling 
-- Mesh adaptation / Multiresolution analysis - new generation of ImEx schemes for reactive flows
-- Rarefied flows 
+Five groups from France involving 15 students / post-doctoral fellows / research software engineers / faculties
+
+::: {.incremental}
+- Mathematical modeling and simulation of non-equilibrium plasmas for the prediction of electric propulsion and plasma discharges including sheath
+- Code coupling : multistep coupling algorithm (Tuesday's seminar) 
+- A two-phase flow model with scale separation for the separated-to-disperse phase transition in high-velocity regimes 
+- A dual splitting/ImEx strategy for multicomponent reacting flows with space/time adaptation and error control
+- Simulation of hybrid dense-rarefied flows relying on relaxation schemes and a
+hierarchy of moment methods
 
 
 :::{.row .text-center .align-items-center}
@@ -1193,4 +1159,44 @@ As part of numpex, we also have an engineer position to work on the I/O part of 
 ::::{.col}
 ![](figures/logo_polytechnique.png){height="100px"}
 ::::
+:::
+
+:::
+
+
+
+---
+
+## Burgers results (MR solution and level for scheme order 3)
+
+{{< include python_sections/sol_level_MR_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR solution and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and level for scheme order 3)
+
+{{< include python_sections/sol_level_MR_MLF_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_MLF_order03_eps1e-5.qmd >}}
+
+---
+
+:::{.text-center}
+<div>
+<video data-autoplay width="80%" src="videos/burgers/MRA_upwind_without_portion-min_1-max_12-eps_0.01-reg_0.mp4" />
+</div>
+:::
+
+:::{.text-center .mt-0}
+$\epsilon = 1e-2$, $\underline{\ell} = 2$, $\bar{\ell} = 12$
 :::
