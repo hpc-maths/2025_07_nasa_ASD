@@ -524,7 +524,7 @@ $t + \Delta t$
 
 
 - Propagation of information :  add security cells
-- Formation of singularities : (regularity index: $\nu =0$, $\mu = \min(\nu,2\gamma +1)$) refine if
+- Formation of singularities : (regularity index: $\nu =0$, $\mu = \min(\nu,2 s +1)$) refine if
 $$
 \left|{\mathbf{d}}_{\ell, k}\right| \geq \epsilon_{\ell}\,2^{d+\mu}
 $$
