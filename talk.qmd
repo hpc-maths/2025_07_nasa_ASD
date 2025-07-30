@@ -809,33 +809,11 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR solution for scheme order 1)
-
-{{< include python_sections/sol_MR_order01_eps1e-3.qmd >}}
-
----
-
-## Burgers results (MR+MLF solution for scheme order 1)
-
-{{< include python_sections/sol_MR_MLF_order01_eps1e-3.qmd >}}
-
----
-
 ## Burgers results (Error for scheme order 1)
 
 {{< include python_sections/err_order01_eps1e-4.qmd >}}
 
 ---
-
-## Burgers results (MR solution for scheme order 1)
-
-{{< include python_sections/sol_MR_order01_eps1e-4.qmd >}}
-
----
-
-## Burgers results (MR+MLF solution for scheme order 1)
-
-{{< include python_sections/sol_MR_MLF_order01_eps1e-4.qmd >}}
 
 ## Burgers results (Error for scheme order 1)
 
@@ -843,15 +821,52 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR solution for scheme order 1)
 
-{{< include python_sections/sol_MR_order01_eps1e-5.qmd >}}
+## Burgers results (MR solution and level for scheme order 1)
+
+{{< include python_sections/sol_level_MR_order01_eps1e-3.qmd >}}
 
 ---
 
-## Burgers results (MR+MLF solution for scheme order 1)
+## Burgers results (MR solution and error for scheme order 1)
 
-{{< include python_sections/sol_MR_MLF_order01_eps1e-5.qmd >}}
+{{< include python_sections/sol_error_MR_order01_eps1e-3.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and level for scheme order 1)
+
+{{< include python_sections/sol_level_MR_MLF_order01_eps1e-3.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and error for scheme order 1)
+
+{{< include python_sections/sol_error_MR_MLF_order01_eps1e-3.qmd >}}
+
+---
+
+## Burgers results (MR solution and level for scheme order 1)
+
+{{< include python_sections/sol_level_MR_order01_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR solution and error for scheme order 1)
+
+{{< include python_sections/sol_error_MR_order01_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and level for scheme order 1)
+
+{{< include python_sections/sol_level_MR_MLF_order01_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and error for scheme order 1)
+
+{{< include python_sections/sol_error_MR_MLF_order01_eps1e-5.qmd >}}
 
 ---
 
@@ -859,17 +874,7 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 {{< include python_sections/err_order02_eps1e-4.qmd >}}
 
----
 
-## Burgers results (MR solution for scheme order 2)
-
-{{< include python_sections/sol_MR_order02_eps1e-4.qmd >}}
-
----
-
-## Burgers results (MR+MLF solution for scheme order 2)
-
-{{< include python_sections/sol_MR_MLF_order02_eps1e-4.qmd >}}
 
 ---
 
@@ -879,17 +884,6 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR solution for scheme order 3)
-
-{{< include python_sections/sol_MR_order03_eps1e-4.qmd >}}
-
----
-
-## Burgers results (MR+MLF solution for scheme order 3)
-
-{{< include python_sections/sol_MR_MLF_order03_eps1e-4.qmd >}}
-
----
 
 ## Burgers results (Error for scheme order 3)
 
@@ -897,19 +891,64 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR solution for scheme order 3)
+## Burgers results (MR solution and level for scheme order 3)
 
-{{< include python_sections/sol_MR_order03_eps1e-5.qmd >}}
-
----
-
-## Burgers results (MR+MLF solution for scheme order 3)
-
-{{< include python_sections/sol_MR_MLF_order03_eps1e-5.qmd >}}
+{{< include python_sections/sol_level_MR_order03_eps1e-4.qmd >}}
 
 ---
 
-## Burgers results (MR+MLF solution order 1) small hat {.fs-6}
+## Burgers results (MR solution and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_order03_eps1e-4.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and level for scheme order 3)
+
+{{< include python_sections/sol_level_MR_MLF_order03_eps1e-4.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_MLF_order03_eps1e-4.qmd >}}
+
+---
+
+
+## Burgers results (MR VS MR+MLF error for scheme order 3)
+
+{{< include python_sections/error_MR_VS_MR_MLF_order03_eps1e-4.qmd >}}
+
+
+---
+
+## Burgers results (MR solution and level for scheme order 3)
+
+{{< include python_sections/sol_level_MR_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR solution and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and level for scheme order 3)
+
+{{< include python_sections/sol_level_MR_MLF_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. and error for scheme order 3)
+
+{{< include python_sections/sol_error_MR_MLF_order03_eps1e-5.qmd >}}
+
+
+---
+
+## Burgers results (MR+MLF sol. order 1) small hat {.fs-6}
 
 <!-- :::{.text-center}
 <video data-autoplay width="80%" src="videos/burgers/MRA_upwind_with_portion-min_1-max_12-eps_0.01-reg_0.mp4" />
@@ -918,7 +957,7 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR+MLF solution order 1) sinus {.fs-6}
+## Burgers results (MR+MLF sol. order 1) sinus {.fs-6}
 
 {{< include python_sections/anim_sin_bis.qmd >}}
 
