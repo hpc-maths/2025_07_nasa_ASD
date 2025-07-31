@@ -28,10 +28,10 @@ footer: Advanced Modeling & Simulation (AMS) Seminar Series &nbsp;&nbsp; <img wi
 The present work is the result of a team work involving
 
 - Thomas Bellotti (CNRS, EM2C - Fédé Maths CS)
-- Loïc Gouarin (IR École polytechnique, CMAP)
-- Josselin Massot (IR École polytechnique, CMAP)
-- Pierre Matalon (IR École polytechnique, CMAP)
-- Laurent Séries (IR École polytechnique, CMAP)
+- Loïc Gouarin (École polytechnique, CMAP)
+- Josselin Massot (École polytechnique, CMAP)
+- Pierre Matalon (École polytechnique, CMAP)
+- Laurent Séries (École polytechnique, CMAP)
 - Christian Tenaud (CNRS, EM2C - Fédé Maths CS)
 
 ::::
