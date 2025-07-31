@@ -912,18 +912,59 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
-## Burgers results (MR+MLF sol. order 1) small hat {.fs-6}
 
-<!-- :::{.text-center}
-<video data-autoplay width="80%" src="videos/burgers/MRA_upwind_with_portion-min_1-max_12-eps_0.01-reg_0.mp4" />
-::: -->
-{{< include python_sections/anim_hat_bis.qmd >}}
+## Burgers 2D results (MR+MLF solution order 1) 
+
+
+::::{.center-page-vertically}
+:::{.text-center}
+<video data-autoplay width="99%" src="videos/burgers2d.mp4" />
+:::
+::::
+
 
 ---
 
-## Burgers results (MR+MLF sol. order 1) sinus {.fs-6}
+## Euler 2D results (MR+MLF solution order 3 (OSMP scheme)) 
 
-{{< include python_sections/anim_sin_bis.qmd >}}
+
+<!-- :::{.text-center}
+![](figures/Bsvortex_osmp3_InitialState_MRAMLF_eps1e-03.png){width=47%}
+![](figures/Bsvortex_osmp3_Tf10_MRAMLF_eps1e-03.png){width=47%}
+::: -->
+
+::: {layout-nrow=2}
+![](figures/Bsvortex_osmp3_InitialState_MRAMLF_eps1e-03.png){width=47%}
+![](figures/Bsvortex_osmp3_Density_T00_MRAMLF_eps1e-03.png){width=47%}
+![](figures/AdaptedMesh_BSvortex_Tf10_level3_9_eps1e-03_MRAFLF_highest.png){width=47%}
+![](figures/Density_contours_BSvortex_Tf10_level3_9_eps1e-03_MRAFLF_highest.png){width=47%}
+
+<!-- ![](figures/Bsvortex_osmp3_Density_T00_MRAMLF_eps1e-03){width=47%}
+![](figures/Bsvortex_osmp3_VelocityMagnitude_T00_MRAMLF_eps1e-03.png){width=47%}
+![](figures/Bsvortex_osmp3_Density_T10_MRAMLF_eps1e-03.png){width=47%}
+![](figuresBsvortex_osmp3_VelocityMagnitude_T10_MRAMLF_eps1e-03.png){width=47%} -->
+:::
+
+---
+
+## Euler 2D results (MR+MLF solution order 3 (OSMP scheme)) 
+
+
+<!-- :::{.text-center}
+![](figures/Bsvortex_osmp3_InitialState_MRAMLF_eps1e-03.png){width=47%}
+![](figures/Bsvortex_osmp3_Tf10_MRAMLF_eps1e-03.png){width=47%}
+::: -->
+
+::: {layout-nrow=2}
+![](figures/Bsvortex_osmp3_InitialState_MRAMLF_eps1e-03.png){width=47%}
+![](figures/VelocityMagnitude_contours_BSvortex_Tf00_level3_9_eps1e-03_MRAFLF_highest.png){width=47%}
+![](figures/AdaptedMesh_BSvortex_Tf10_level3_9_eps1e-03_MRAFLF_highest.png){width=47%}
+![](figures/VelocityMagnitude_contours_BSvortex_Tf10_level3_9_eps1e-03_MRAFLF_highest.png){width=47%}
+
+
+:::
+
+
 
 # Adaptive mesh refinement software
 
@@ -1163,6 +1204,40 @@ hierarchy of moment methods
 
 :::
 
+---
+
+## Five projects - NASA Modelling Summer Visit 2025
+
+Five groups from France involving 15 students / post-doctoral fellows / research software engineers / faculties
+
+- Mathematical modeling and simulation of non-equilibrium plasmas for the prediction of electric propulsion and plasma discharges including sheath
+- Code coupling : multistep coupling algorithm (Tuesday's seminar) 
+- A two-phase flow model with scale separation for the separated-to-disperse phase transition in high-velocity regimes 
+- A dual splitting/ImEx strategy for multicomponent reacting flows with space/time adaptation and error control
+- Simulation of hybrid dense-rarefied flows relying on relaxation schemes and a
+hierarchy of moment methods
+
+
+:::{.row .text-center .align-items-center}
+::::{.col}
+![](figures/logo_nasa.jpg){height="130px"}
+::::
+::::{.col}
+![](figures/ESM-logo.png){height="110px"}
+::::
+::::{.col}
+![](figures/logo.png){height="130px"}
+::::
+::::{.col}
+![](figures/logo_polytechnique.png){height="100px"}
+::::
+:::
+
+:::{.row .text-center}
+<h3>Thank you for your attention</h3>
+:::
+
+
 
 
 ---
@@ -1188,6 +1263,21 @@ hierarchy of moment methods
 ## Burgers results (MR+MLF sol. and error for scheme order 3)
 
 {{< include python_sections/sol_error_MR_MLF_order03_eps1e-5.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. order 1) small hat {.fs-6}
+
+<!-- :::{.text-center}
+<video data-autoplay width="80%" src="videos/burgers/MRA_upwind_with_portion-min_1-max_12-eps_0.01-reg_0.mp4" />
+::: -->
+{{< include python_sections/anim_hat_bis.qmd >}}
+
+---
+
+## Burgers results (MR+MLF sol. order 1) sinus {.fs-6}
+
+{{< include python_sections/anim_sin_bis.qmd >}}
 
 ---
 
