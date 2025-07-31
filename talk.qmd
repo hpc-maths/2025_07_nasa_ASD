@@ -835,6 +835,12 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 
 ---
 
+## Burgers results (Error for scheme order 1)
+
+{{< include python_sections/err_order01_eps1e-5.qmd >}}
+
+---
+
 ## Burgers results (MR solution and level for scheme order 1)
 
 {{< include python_sections/sol_level_MR_order01_eps1e-5.qmd >}}
