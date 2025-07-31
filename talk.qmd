@@ -928,7 +928,7 @@ Now, if we wanted to reconstruct all the cells of the finest level, we'd only ne
 :::
 ::::
 
-
+ 
 ---
 
 ## Euler 2D results (MR+MLF solution order 3 (OSMP scheme)) 
